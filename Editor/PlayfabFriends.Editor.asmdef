@@ -1,0 +1,8 @@
+{
+  "name": "Sabih.PlayfabFriends.Editor",
+  "references": [
+    "Sabih.PlayfabFriends.Runtime",
+    "UnityEditor"
+  ],
+  "includePlatforms": ["Editor"]
+}

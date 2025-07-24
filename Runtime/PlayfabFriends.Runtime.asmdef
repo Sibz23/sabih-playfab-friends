@@ -1,0 +1,8 @@
+{
+  "name": "Sabih.PlayfabFriends.Runtime",
+  "references": [
+    "PlayFabSDK"
+  ],
+  "includePlatforms": ["Editor","Standalone","iOS","Android"],
+  "allowUnsafeCode": false
+}
