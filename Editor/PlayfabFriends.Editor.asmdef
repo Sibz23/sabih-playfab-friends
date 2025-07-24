@@ -1,8 +1,20 @@
 {
-  "name": "Sabih.PlayfabFriends.Editor",
-  "references": [
-    "Sabih.PlayfabFriends.Runtime",
-    "UnityEditor"
-  ],
-  "includePlatforms": ["Editor"]
+    "name": "Sabih.PlayfabFriends.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Sabih.PlayfabFriends.Runtime",
+        "UnityEditor",
+        "PlayFab"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

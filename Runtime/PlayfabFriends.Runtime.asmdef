@@ -1,16 +1,24 @@
 {
-  "name": "Sabih.PlayfabFriends.Runtime",
-  "references": [
-    "PlayFabSDK"
-  ],
-  "includePlatforms": [
-    "Editor",
-    "WindowsStandalone64",
-    "LinuxStandalone64",
-    "macOSStandalone",
-    "iOS",
-    "Android",
-    "WebGL"
-  ],
-  "allowUnsafeCode": false
+    "name": "Sabih.PlayfabFriends.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "PlayFab"
+    ],
+    "includePlatforms": [
+        "Android",
+        "Editor",
+        "iOS",
+        "LinuxStandalone64",
+        "macOSStandalone",
+        "WebGL",
+        "WindowsStandalone64"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

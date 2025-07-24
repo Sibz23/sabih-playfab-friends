@@ -65,8 +65,7 @@ namespace Sabih.PlayfabFriends
         public void FetchFriendsList()
         {
             var req = new GetFriendsListRequest {
-                IncludeFacebookFriends = false,
-                IncludeSteamFriends    = false
+                ExternalPlatformFriends = ExternalFriendSources.Facebook,
             };
             PlayFabClientAPI.GetFriendsList(req,
                 res => OnFriendsListReceived?.Invoke(res.Friends),
@@ -86,14 +85,12 @@ namespace Sabih.PlayfabFriends
         public void ImportFacebookFriends()
         {
             var req = new GetFriendsListRequest {
-                IncludeFacebookFriends = true,
-                IncludeSteamFriends    = false
+                ExternalPlatformFriends = ExternalFriendSources.Facebook,
             };
             PlayFabClientAPI.GetFriendsList(req,
                 res => {
                     foreach (var f in res.Friends)
-                        if (f.IsFacebookFriend)
-                            AddFriendById(f.FriendPlayFabId);
+                        AddFriendById(f.FriendPlayFabId);
                 },
                 err => OnError?.Invoke(err.GenerateErrorReport()));
         }
