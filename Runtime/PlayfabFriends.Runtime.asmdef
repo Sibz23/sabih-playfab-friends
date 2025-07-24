@@ -3,6 +3,14 @@
   "references": [
     "PlayFabSDK"
   ],
-  "includePlatforms": ["Editor","Standalone","iOS","Android"],
+  "includePlatforms": [
+    "Editor",
+    "WindowsStandalone64",
+    "LinuxStandalone64",
+    "macOSStandalone",
+    "iOS",
+    "Android",
+    "WebGL"
+  ],
   "allowUnsafeCode": false
 }
