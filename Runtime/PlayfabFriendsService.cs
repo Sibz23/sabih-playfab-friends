@@ -11,9 +11,9 @@ namespace Sabih.PlayfabFriends
     {
         public static PlayfabFriendsService Instance { get; private set; }
 
-        public event Action<List<FriendInfo>> OnFriendsListReceived;
-        public event Action OnRequestSent;
-        public event Action<string> OnError;
+        public static event Action<List<FriendInfo>> OnFriendsListReceived;
+        public static event Action OnRequestSent;
+        public static event Action<string> OnError;
 
         /// <summary>CloudScript URL from settings (stub).</summary>
         public string CloudScriptUrl => settings != null ? settings.CloudScriptUrl : string.Empty;
